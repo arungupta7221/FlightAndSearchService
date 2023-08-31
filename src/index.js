@@ -14,8 +14,11 @@ const setupAndStartServer = async () => {
   // city.createCity({
   //   name: 'Mumbai',
   // })
-  await city.createCity({
-    name: 'Banglore',
-  })
+  // await city.createCity({
+  //   name: 'Banglore',
+  // })
+  // city.deleteCity({
+  //   cityId: 2,
+  // })
 }
 setupAndStartServer()
