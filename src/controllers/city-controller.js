@@ -43,6 +43,7 @@ const destroy = async (req, res) => {
 const update = async (req, res) => {
   try {
     const response = await cityService.updateCity(req.body, req.params.id)
+    console.log(response)
     return res.status(200).json({
       data: response,
       success: true,
@@ -59,7 +60,7 @@ const update = async (req, res) => {
     })
   }
 }
-const get = async () => {
+const get = async (req, res) => {
   try {
     const response = await cityService.getCity(req.params.id)
     return res.status(200).json({
