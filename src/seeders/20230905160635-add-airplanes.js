@@ -12,28 +12,35 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
      */
-    await queryInterface.bulkInsert('Airports', [
+
+    await queryInterface.bulkInsert('Airplanes', [
       {
-        name: 'Rajiv Gandhi International Airport',
-        cityId: 3,
+        modelNo: 'Boeing 737',
+        capacity: 300,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        name: 'Begumpet Airport',
-        cityId: 3,
+        modelNo: 'Airbus A320',
+        capacity: 350,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        name: 'Jaipur International Airport',
-        cityId: 4,
+        modelNo: 'Boeing 777',
+        capacity: 400,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        name: 'Pune International Airport',
-        cityId: 7,
+        modelNo: 'Boeing 747',
+        capacity: 420,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        modelNo: 'Airbus A330',
+        capacity: 320,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -47,6 +54,5 @@ module.exports = {
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
-    // await queryInterface.bulkDelete('Airports', null, {})
   },
 }

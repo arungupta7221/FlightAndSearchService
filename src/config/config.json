@@ -2,6 +2,7 @@
   "development": {
     "username": "root",
     "password": "Arun@1234",
+    "logging": true,
     "database": "Flight_Search_DB_DEV",
     "host": "127.0.0.1",
     "dialect": "mysql"
@@ -9,6 +10,7 @@
   "test": {
     "username": "root",
     "password": null,
+    "logging": true,
     "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
@@ -16,6 +18,7 @@
   "production": {
     "username": "root",
     "password": null,
+    "logging": true,
     "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "mysql"
